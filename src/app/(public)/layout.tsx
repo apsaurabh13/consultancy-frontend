@@ -1,15 +1,17 @@
-// app/(public)/layout.tsx
+import type { ReactNode } from "react";
+import { Navbar } from "@/components/navbar/navbar";
+import { Footer } from "@/components/footer/footer";
 
-import PublicLayout from "../../components/layouts/PublicLayout";
+interface PublicLayoutProps {
+  children: ReactNode;
+}
 
-export default function Layout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function PublicLayout({ children }: PublicLayoutProps) {
   return (
-    <PublicLayout>
-      {children}
-    </PublicLayout>
+    <div className="min-h-screen bg-background">
+      <Navbar />
+      <main className="relative">{children}</main>
+      <Footer />
+    </div>
   );
 }
