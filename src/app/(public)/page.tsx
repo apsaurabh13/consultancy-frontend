@@ -5,7 +5,6 @@ import { FeaturedConsultants } from "@/features/home/components/featured-consult
 import { CategoriesSection } from "@/features/home/components/categories-section";
 import { HowItWorks } from "@/features/home/components/how-it-works";
 import { WhyConsultEdge } from "@/features/home/components/why-consultedge";
-import { PricingSection } from "@/features/home/components/pricing-section";
 import { TestimonialsSection } from "@/features/home/components/testimonials-section";
 import { CtaSection } from "@/features/home/components/cta-section";
 
@@ -19,7 +18,7 @@ export default function HomePage() {
       <CategoriesSection />
       <HowItWorks />
       <WhyConsultEdge />
-      <PricingSection />
+     
       <TestimonialsSection />
       <CtaSection />
     </>
